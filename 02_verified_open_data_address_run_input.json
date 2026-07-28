@@ -1,0 +1,29 @@
+{
+  "acceptTerms": true,
+  "demoMode": false,
+  "addressItems": [
+    {
+      "address": "1 Apple Park Way, Cupertino, CA 95014",
+      "roofAreaM2": 800
+    },
+    {
+      "address": "350 5th Ave, New York, NY 10118",
+      "systemCapacityKw": 25
+    }
+  ],
+  "countryCode": "US",
+  "requiredQuality": "BASE",
+  "defaultSystemCapacityKw": 5,
+  "usableRoofFraction": 0.55,
+  "panelPowerWatts": 440,
+  "panelAreaM2": 2,
+  "systemLossPercent": 14,
+  "pvgisMountingPlace": "free",
+  "pvgisPvTechnology": "crystSi2025",
+  "energyUncertaintyPercent": 20,
+  "minLeadScore": 65,
+  "incentiveRate": 0,
+  "maxItems": 1000,
+  "concurrency": 5,
+  "requestTimeoutSecs": 30
+}

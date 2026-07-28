@@ -1,0 +1,31 @@
+{
+  "sourceId": "demo-property-001",
+  "source": "illustrative_demo",
+  "providerMode": "DEMO",
+  "demoMode": true,
+  "inputAddress": "Illustrative residential property",
+  "formattedAddress": "Illustrative demo property, not a real address",
+  "status": "qualified",
+  "leadScore": 82,
+  "qualified": true,
+  "maxPanels": 28,
+  "recommendedPanels": 18,
+  "maxSystemCapacityKw": 11.2,
+  "estimatedAnnualEnergyKwhAc": 9800,
+  "estimatedAnnualEnergyKwhDc": 10600,
+  "estimatedAnnualSavingsUsd": 2058,
+  "simplePaybackYears": 7.4,
+  "savingsYear20Amount": 31600,
+  "financialCurrencyCode": "USD",
+  "financialDataSource": "ILLUSTRATIVE_DEMO",
+  "usableArrayAreaM2": 61.4,
+  "maxSunshineHoursPerYear": 1580,
+  "imageryDate": null,
+  "reasonCodes": [
+    "DEMO_DATA",
+    "STRONG_SOLAR_POTENTIAL",
+    "ATTRACTIVE_PAYBACK"
+  ],
+  "processedAt": "2026-07-28T12:53:53.153Z",
+  "googleContentExpiresAt": "2026-07-28T12:53:53.153Z"
+}

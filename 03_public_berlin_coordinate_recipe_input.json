@@ -1,0 +1,12 @@
+{
+  "providerMode": "OPEN_DATA",
+  "acceptTerms": true,
+  "coordinates": [
+    {
+      "id": "berlin-sample",
+      "latitude": 52.52,
+      "longitude": 13.405,
+      "roofAreaM2": 100
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kamerozkan/solar-rooftop-lead-scorer-sample/dataset_record.schema.json",
+  "title": "Solar Rooftop Lead Scorer sample record",
+  "description": "Strict contract for the privacy-minimized OPEN_DATA and illustrative DEMO projections in this repository. The full Actor dataset contains additional fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "sourceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "enum": [
+        "addressItems",
+        "illustrative_demo"
+      ]
+    },
+    "providerMode": {
+      "enum": [
+        "OPEN_DATA",
+        "DEMO"
+      ]
+    },
+    "demoMode": {
+      "type": "boolean"
+    },
+    "inputAddress": {
+      "type": "string",
+      "minLength": 1
+    },
+    "formattedAddress": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "latitude": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": -180,
+      "maximum": 180
+    },
+    "geocodingPlaceId": {
+      "type": "string"
+    },
+    "geocodingLocationType": {
+      "type": "string"
+    },
+    "geocodingConfidenceLevel": {
+      "enum": [
+        "medium",
+        "low",
+        null
+      ]
+    },
+    "regionCode": {
+      "type": "string"
+    },
+    "administrativeAreaCode": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "qualified",
+        "not_qualified",
+        "no_data",
+        "error"
+      ]
+    },
+    "leadScore": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "qualified": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "maxPanels": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "recommendedPanels": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "maxSystemCapacityKw": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "scenarioPanels": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "scenarioSystemCapacityKw": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "specificYieldKwhPerKwp": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "annualIrradiationKwhM2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "estimatedAnnualEnergyKwhAc": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "estimatedAnnualEnergyKwhDc": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "estimatedAnnualEnergyKwhAcLow": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "estimatedAnnualEnergyKwhAcHigh": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "estimatedAnnualSavingsUsd": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "simplePaybackYears": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "grossAnnualEnergyValueUsd": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "grossValueSimplePaybackYears": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "savingsYear20Amount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "financialCurrencyCode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "financialDataSource": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "assessmentScope": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "capacitySource": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "openDataConfidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "assessmentConfidenceScore": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "evidenceCompletenessScore": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 100
+    },
+    "requiresSiteSurvey": {
+      "type": "boolean"
+    },
+    "pvgisPanelTiltDegrees": {
+      "type": "number"
+    },
+    "pvgisPanelAzimuthDegrees": {
+      "type": "number"
+    },
+    "pvgisAnnualVariabilityKwhPerKwp": {
+      "type": "number"
+    },
+    "pvgisTotalLossPercent": {
+      "type": "number"
+    },
+    "pvgisMountingType": {
+      "type": "string"
+    },
+    "pvgisMountingPlace": {
+      "type": "string"
+    },
+    "pvgisPvTechnology": {
+      "type": "string"
+    },
+    "radiationDatabase": {
+      "type": "string"
+    },
+    "meteorologicalDatabase": {
+      "type": "string"
+    },
+    "dataYearStart": {
+      "type": "integer"
+    },
+    "dataYearEnd": {
+      "type": "integer"
+    },
+    "horizonSource": {
+      "type": "string"
+    },
+    "usableArrayAreaM2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "maxSunshineHoursPerYear": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "imageryDate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reasonCodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "explanation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "error": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "retryable": {
+          "type": "boolean"
+        },
+        "httpStatus": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "details": {}
+      },
+      "required": [
+        "code",
+        "message",
+        "retryable",
+        "httpStatus",
+        "details"
+      ]
+    },
+    "googleMapsAttribution": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "solarDataAttribution": {
+      "type": "string"
+    },
+    "derivedContentAttribution": {
+      "type": "string"
+    },
+    "googleContentExpiresAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "dataSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "geocoding": {
+          "type": "string"
+        },
+        "solarResource": {
+          "type": "string"
+        },
+        "rooftopGeometry": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "geocoding",
+        "solarResource",
+        "rooftopGeometry"
+      ]
+    },
+    "dataSourceUrls": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "geocoding": {
+          "type": "string",
+          "format": "uri"
+        },
+        "solarResource": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "geocoding",
+        "solarResource"
+      ]
+    },
+    "processedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "sourceId",
+    "source",
+    "providerMode",
+    "demoMode",
+    "inputAddress",
+    "formattedAddress",
+    "status",
+    "leadScore",
+    "qualified",
+    "reasonCodes",
+    "processedAt"
+  ]
+}

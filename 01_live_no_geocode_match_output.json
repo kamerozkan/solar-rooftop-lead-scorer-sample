@@ -1,0 +1,49 @@
+{
+  "sourceId": "address-item-1",
+  "source": "addressItems",
+  "providerMode": "OPEN_DATA",
+  "demoMode": false,
+  "inputAddress": "1 Apple Park Way, Cupertino, CA 95014",
+  "formattedAddress": null,
+  "latitude": null,
+  "longitude": null,
+  "status": "no_data",
+  "leadScore": null,
+  "qualified": null,
+  "scenarioPanels": null,
+  "scenarioSystemCapacityKw": null,
+  "specificYieldKwhPerKwp": null,
+  "estimatedAnnualEnergyKwhAc": null,
+  "estimatedAnnualEnergyKwhAcLow": null,
+  "estimatedAnnualEnergyKwhAcHigh": null,
+  "requiresSiteSurvey": true,
+  "assumptions": [],
+  "limitations": [],
+  "reasonCodes": [
+    "NO_GEOCODE_MATCH"
+  ],
+  "explanation": [
+    "The U.S. Census Geocoder found no matching address."
+  ],
+  "error": {
+    "code": "NO_GEOCODE_MATCH",
+    "message": "The U.S. Census Geocoder found no matching address.",
+    "retryable": false,
+    "httpStatus": null,
+    "details": null
+  },
+  "googleMapsAttribution": null,
+  "solarDataAttribution": "European Commission Joint Research Centre - PVGIS 5.3",
+  "derivedContentAttribution": "Derived by Solar Rooftop Lead Scorer from PVGIS and user assumptions.",
+  "googleContentExpiresAt": null,
+  "dataSource": {
+    "geocoding": "U.S. Census Geocoder Public_AR_Current",
+    "solarResource": "European Commission JRC PVGIS 5.3",
+    "rooftopGeometry": "Not measured"
+  },
+  "dataSourceUrls": {
+    "geocoding": "https://geocoding.geo.census.gov/geocoder/",
+    "solarResource": "https://re.jrc.ec.europa.eu/pvg_tools/en/"
+  },
+  "processedAt": "2026-07-28T14:52:39.914Z"
+}
