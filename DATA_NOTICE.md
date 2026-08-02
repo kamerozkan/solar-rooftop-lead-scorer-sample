@@ -8,28 +8,29 @@ The Actor and this repository are independently maintained. They are not affilia
 
 ## Audit snapshot
 
-The following state was verified through the public Apify API, public Store page, public build records, and authenticated owner console on 2026-07-29:
+The following state was verified through the public Apify API, public Store page, public build records, and authenticated owner console on 2026-07-29, with current build and smoke status refreshed on 2026-08-02:
 
 | Item | Verified value |
 |---|---|
 | Actor | `kamerozkan/solar-rooftop-lead-scorer` |
 | Actor ID | `soaKkDxBAEDY4JSlb` |
 | Public | `true` |
-| Current latest build | `0.2.10`, build ID `4UnB63UExdm1JMUH9`, status `SUCCEEDED` |
-| Saved tasks | 5 total, 1 public |
+| Current latest build | `0.2.13`, build ID `gbdvjcIE50T2LDgXc`, status `SUCCEEDED` |
+| Saved tasks | 4 total, 1 public |
 | Public Example Task | `wPS3YcoBLSW59YWTg`, slug `preview-rooftop-solar-scoring-with-a-free-demo` |
 | Inspected public-task run | `13JAmEk7QtEaEVLsx`, build `0.1.11` |
 | Public-task dataset | `p39ebTaNt566cmUh5`, 1 illustrative record |
 | Inspected live run | `swIS6orxhytWO51hj`, build `0.2.6`, 2 records |
 | Inspected live dataset | `4f7TNIzjbDSneMze5` |
+| Current keyless smoke | `wgod85L5wWai35y35`, build `0.2.13`, 1 qualified `OPEN_DATA` record |
 
-The latest build `0.2.10` completed successfully after the inspected live dataset run. This repository does not claim runtime validation of `0.2.10`; its two live projections come from build `0.2.6`.
+Build `0.2.13` completed successfully. The 2026-08-02 smoke produced one qualified Berlin `OPEN_DATA` record and triggered one `property-analyzed` event plus one Actor-start event. The repository's two checked-in live projections still come from build `0.2.6` and remain labeled with that provenance.
 
 ## Input provenance
 
 - [`01_public_demo_example_task_input.json`](01_public_demo_example_task_input.json) is the exact input of the sole public Example Task at audit time. `demoMode: true` means it does not perform a real property or provider assessment.
 - [`02_verified_open_data_address_run_input.json`](02_verified_open_data_address_run_input.json) reproduces the complete non-secret configuration of successful run `swIS6orxhytWO51hj`.
-- [`03_public_berlin_coordinate_recipe_input.json`](03_public_berlin_coordinate_recipe_input.json) is the keyless quick-start recipe published in the current Actor README and accepted by the current input schema. It was not run during this repository audit.
+- [`03_public_berlin_coordinate_recipe_input.json`](03_public_berlin_coordinate_recipe_input.json) is the keyless quick-start recipe published in the current Actor README and accepted by the current input schema. It was verified successfully in run `wgod85L5wWai35y35` on build `0.2.13` during the 2026-08-02 refresh.
 
 The two addresses in inputs 01 and 02 are public corporate campuses or landmarks. No private residential address is included.
 
