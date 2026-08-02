@@ -3,8 +3,8 @@
 # Solar Rooftop Lead Scorer: Samples and JSON Schema
 
 [![Apify Actor](https://img.shields.io/badge/Apify-Run%20Actor-00c7b7?logo=apify)](https://apify.com/kamerozkan/solar-rooftop-lead-scorer)
-![Latest build](https://img.shields.io/badge/latest_build-0.2.10%20SUCCEEDED-2f855a)
-![Verified run](https://img.shields.io/badge/verified_run-0.2.6%20%7C%202%20records-2f855a)
+![Latest build](https://img.shields.io/badge/latest_build-0.2.13%20SUCCEEDED-2f855a)
+![Current smoke](https://img.shields.io/badge/current_smoke-0.2.13%20%7C%201%20record-2f855a)
 ![Public example](https://img.shields.io/badge/public_example-1-2f855a)
 ![JSON Schema](https://img.shields.io/badge/schema-JSON%20Schema%202020--12-4c1)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -24,7 +24,7 @@ This repository contains three schema-valid inputs, two privacy-minimized live p
 
 `OPEN_DATA` mode does not require a Google API key. Calling Apify through its API still requires Apify authentication. Google BYOK mode is available in the Actor but is not represented by the output samples in this repository.
 
-At the 2026-07-29 audit, the Actor was public and latest build `0.2.10` had completed successfully. The two inspected live rows used build `0.2.6`; the public demo task's inspected run used build `0.1.11`. The repository does not claim runtime validation of `0.2.10`.
+At the 2026-07-29 audit, the Actor was public and the two inspected live rows used build `0.2.6`; the public demo task's inspected run used build `0.1.11`. On 2026-08-02, current build `0.2.13` was verified with a real keyless PVGIS smoke run that produced one qualified Berlin record. The checked-in historical output projections remain labeled with their original build provenance.
 
 ## What the contract makes explicit
 
