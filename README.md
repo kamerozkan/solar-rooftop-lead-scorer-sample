@@ -1,6 +1,10 @@
 > **Live API:** [Run Solar Panel Rooftop Lead Scorer on Apify](https://apify.com/kamerozkan/solar-rooftop-lead-scorer)
 
-# Solar Rooftop Lead Scorer: Samples and JSON Schema
+# Solar Lead Scorer - PVGIS & Google Solar API: Samples
+
+Keyless solar pre-screening with EU JRC PVGIS 5.3: modeled yield, energy ranges, confidence and explainable lead scores for solar installers and solar panel sales. No Google key needed. US addresses and PVGIS-covered coordinates supported. Optional Google Solar API BYOK mode adds rooftop geometry.
+
+[Run Solar Lead Scorer - PVGIS & Google Solar API on Apify](https://apify.com/kamerozkan/solar-rooftop-lead-scorer)
 
 [![Apify Actor](https://img.shields.io/badge/Apify-Run%20Actor-00c7b7?logo=apify)](https://apify.com/kamerozkan/solar-rooftop-lead-scorer)
 ![Latest build](https://img.shields.io/badge/latest_build-0.2.13%20SUCCEEDED-2f855a)

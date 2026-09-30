@@ -1,0 +1,15 @@
+{
+  "id": "soaKkDxBAEDY4JSlb",
+  "name": "solar-rooftop-lead-scorer",
+  "title": "Solar Lead Scorer - PVGIS & Google Solar API",
+  "description": "Keyless solar pre-screening with EU JRC PVGIS 5.3: modeled yield, energy ranges, confidence and explainable lead scores for solar installers and solar panel sales. No Google key needed. US addresses and PVGIS-covered coordinates supported. Optional Google Solar API BYOK mode adds rooftop geometry.",
+  "seoTitle": "Solar Lead Scorer - PVGIS & Google Solar API",
+  "seoDescription": "Score solar leads with PVGIS yield estimates, confidence ranges and explained qualification. No Google key in PVGIS mode; optional Solar API uses your key.",
+  "isPublic": true,
+  "url": "https://apify.com/kamerozkan/solar-rooftop-lead-scorer",
+  "checkedAt": "2026-09-30",
+  "changeScope": "listing metadata and sample documentation only",
+  "runtimeChanged": false,
+  "schemasChanged": false,
+  "examplesRegenerated": false
+}
